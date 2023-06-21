@@ -1,0 +1,20 @@
+ load("C:\\Users\\water place pharmacy\\Documents\\.RData")
+q()
+df<-read.csv(file="C://Users//water place pharmacy//Documents//study_hours.csv")
+ head(df)
+ summary(df)
+str(df)
+ any(is.na(data()))
+ names(df)
+ ##########histogram######
+hist(df$Scores,col='steelblue',main='Histogram',xlab='Scores',ylab='Hours')
+ model<-lm(Scores~Hours,data=df)
+ model
+print(summary(model))
+ print(cor(df$Hours,df$Scores))
+ print(coefficients(model))
+abline(model,col='blue')
+p<-as.data.frame(9.25)
+ colnames(p)<-"Hours"
+ prediction<-predict(model,newdata=p)
+  prediction
